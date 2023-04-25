@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>LoginAuthentication</display-name>
+  <welcome-file-list>
+     <welcome-file>index.html</welcome-file> 
+  </welcome-file-list>
+  
+  <welcome-file-list>
+     <welcome-file>addproduct.html</welcome-file> 
+  </welcome-file-list>
+  
+  <welcome-file-list>
+     <welcome-file>CategoryId.html</welcome-file> 
+  </welcome-file-list>
+ 
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>com.demo.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>Admin</servlet-name>
+  <servlet-class>com.demo.servlet.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Admin</servlet-name>
+  <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>
+  UserServlet
+  </servlet-name>
+  <servlet-class>com.demo.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UserServlet</servlet-name>
+  <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>InsertProduct</servlet-name>
+  <servlet-class>com.demo.servlet.InsertProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>InsertProduct</servlet-name>
+  <url-pattern>/InsertProduct</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AddProduct</servlet-name>
+  <servlet-class>com.demo.servlet.AddProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddProduct</servlet-name>
+  <url-pattern>/AddProduct</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>DisplayAllProduct</servlet-name>
+  <servlet-class>com.demo.servlet.DisplayAllProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DisplayAllProduct</servlet-name>
+  <url-pattern>/DisplayAllProduct</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+  <servlet-name>DeleteProduct</servlet-name>
+  <servlet-class>com.demo.servlet.DeleteProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteProduct</servlet-name>
+  <url-pattern>/DeleteProduct</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>EditProduct</servlet-name>
+  <servlet-class>com.demo.servlet.EditProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EditProduct</servlet-name>
+  <url-pattern>/Edit</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>com.demo.servlet.Update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>ProductDetails</servlet-name>
+  <servlet-class>com.demo.servlet.ProductDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ProductDetails</servlet-name>
+  <url-pattern>/productdetails</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>GenerateCart</servlet-name>
+  <servlet-class>com.demo.servlet.GenerateCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>GenerateCart</servlet-name>
+  <url-pattern>/generatecart</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>GenerateBill</servlet-name>
+  <servlet-class>com.demo.servlet.GenerateBill</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>GenerateBill</servlet-name>
+  <url-pattern>/generatebill</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>FinalizeOrder</servlet-name>
+  <servlet-class>com.demo.servlet.FinalizeOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FinalizeOrder</servlet-name>
+  <url-pattern>/finalizeorder</url-pattern>
+  
+  
+  </servlet-mapping>
+</web-app>
